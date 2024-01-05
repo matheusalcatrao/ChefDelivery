@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
-
+// App Sysmbols SF para buscar imagens nativas do IOS
 struct NavigationBar: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Spacer()
+            Button("Av rotary, 680") {
+                
+            }
+            .font(.subheadline)
+            .fontWeight(.semibold)
+            .foregroundColor(.black)
+            Spacer()
+            
+            Button(action: {}) {
+                Image(systemName: "bell.badge")
+                    .font(.title3)
+                    .foregroundColor(.red)
+            }
+        }
     }
 }
 
 #Preview {
     NavigationBar()
+        .previewLayout(.sizeThatFits)
+        .padding(10)
 }
