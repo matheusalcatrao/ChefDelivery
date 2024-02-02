@@ -66,7 +66,7 @@ struct ContentView: View {
     func getStoresWithAlamofire() {
         service.fetchDataWithAlamofire {
             stores, error in
-            print(stores)
+            // print(stores)
         }
     }
     
